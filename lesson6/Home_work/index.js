@@ -1,270 +1,270 @@
-// // Работа с if-else
-// //  Если переменная a равна нулю, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.
-var a = 1;
-var result = a == 0 ? "Верно" : "Неверно";
-console.log(result);
-// //  Если переменная a больше нуля, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.
-var result = a > 0 ? "Верно" : "Неверно";
-console.log(result);
-// //  Если переменная a меньше нуля, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.
-var result = a < 0 ? "Верно" : "Неверно";
-console.log(result);
-// //  Если переменная a больше или равна нулю, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.
-var result = a >= 0 ? "Верно" : "Неверно";
-console.log(result);
-// //  Если переменная a меньше или равна нулю, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.
-var result = a <= 0 ? "Верно" : "Неверно";
-console.log(result);
-// //  Если переменная a не равна нулю, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.
-var result = a != 0 ? "Верно" : "Неверно";
-console.log(result);
-// //  Если переменная a равна 'test', то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном 'test', 'тест', 3.
-var result = a === "test" ? "Верно" : "Неверно";
-console.log(result);
-// //  Если переменная a равна '1' и по значению и по типу, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу скрипта при a, равном '1', 1, 3.
-var result = a === 1 ? "Верно" : "Неверно";
-console.log(result);
-// // Работа с логическими переменными
-// // Если переменная test равна true, то выведите 'Верно', иначе выведите 'Неверно'.
-// // Проверьте работу скрипта при test, равном true, false. Напишите два варианта скрипта - с короткой записью и с длинной.
-var test = true;
-var result = test == true ? "Верно" : "Неверно";
-console.log(result);
-if (test == true) {
-  console.log("Верно");
-} else {
-  console.log("Неверно");
-}
-// // Если переменная test не равна true, то выведите 'Верно', иначе выведите 'Неверно'.
-// // Проверьте работу скрипта при test, равном true, false. Напишите два варианта скрипта - с короткой записью и с длинной.
-var test = false;
-var result = test != true ? "Верно" : "Неверно";
-console.log(result);
-if (test != true) {
-  console.log("Верно");
-} else {
-  console.log("Неверно");
-}
-// Работа с && (и) и || (или)
-// Если переменная a больше нуля и меньше 5-ти, то выведите 'Верно', иначе выведите 'Неверно'.
-// Проверьте работу скрипта при a, равном 5, 0, -3, 2.
-var result = a > 0 && a < 5 ? "Верно" : "Неверно";
-console.log(result);
-// Если переменная a равна нулю или равна двум, то прибавьте к ней 7, иначе поделите ее на 10.
-// Выведите новое значение переменной на экран. Проверьте работу скрипта при a, равном 5, 0, -3, 2.
-var result = a == 0 || a == 2 ? a + 7 : a / 10;
-console.log(result);
-// Если переменная a равна или меньше 1, а переменная b больше или равна 3, то выведите сумму этих переменных,
-// иначе выведите их разность (результат вычитания). Проверьте работу скрипта при a и b, равном 1 и 3, 0 и 6, 3 и 5.
-var b = 3;
-var result = a <= 1 || b >= 3 ? a + b : a - b;
-console.log(result);
-// Если переменная a больше 2-х и меньше 11-ти, или переменная b больше или равна 6-ти и меньше 14-ти,
-// то выведите 'Верно', в противном случае выведите 'Неверно'.
-var result = (a > 2 && a < 11) || (b >= 6 && b < 14) ? "Верно" : "Неверно";
-console.log(result);
-// На switch-case
-// Переменная num может принимать 4 значения: 1, 2, 3 или 4. Если она имеет значение '1', то в переменную result
-// запишем 'зима', если имеет значение '2' – 'весна' и так далее. Решите задачу через switch-case.
-let num = 2;
-switch (num) {
-  case 1:
-    console.log("Зима");
-    break;
-  case 2:
-    console.log("Весна");
-    break;
-  case 3:
-    console.log("Лето");
-    break;
-  case 4:
-    console.log("Осень");
-    break;
-  default:
-    console.log("Значения нет");
-}
-// Общие задачи
-//  В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число
-// (в первую, вторую или третью).
-let day = 15;
-if (day <= 10) {
-  console.log("первая декада");
-} else if (day <= 20) {
-  console.log("вторая декада");
-} else {
-  console.log("третья декада");
-}
-// В переменной month лежит какое-то число из интервала от 1 до 12. Определите в какую пору года попадает этот месяц
-// (зима, лето, весна, осень).
-let month = 4;
-if (month <= 2 && month == 12) {
-  console.log("Зима");
-}
-if (month >= 3 && month <= 5) {
-  console.log("Весна");
-} else if (month >= 6 && month <= 8) {
-  console.log("Лето");
-} else {
-  console.log("Осень");
-}
-//  Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым символом этой строки является буква 'a'.
-// Если это так - выведите 'да', в противном случае выведите 'нет'.
-const str = "abcde";
-var result = str[0] == "a" ? "да" : "нет";
-console.log(result);
-// Дана строка с цифрами, например, '12345'. Проверьте, что первым символом этой строки является цифра 1, 2 или 3.
-// Если это так - выведите 'да', в противном случае выведите 'нет'.
-const str_1 = "12345";
-var result = str_1[0] <= 3 ? "да" : "нет";
-console.log(result);
-//  Дана строка из 3-х цифр. Найдите сумму этих цифр. То есть сложите как числа первый символ строки, второй и третий.
-const str_2 = "113";
-console.log(Number(str_2[0]) + Number(str_2[1]) + Number([2]));
-//  Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр.
-// Если это так - выведите 'да', в противном случае выведите 'нет'.
-const str_3 = "123456";
-const s = Number(str_2[0]) + Number(str_2[1]) + Number([2]);
-const d = Number(str_2[3]) + Number(str_2[4]) + Number([5]);
-var result = s == d ? "да" : "нет";
-console.log(result);
-// Циклы while и for
-//  Выведите столбец чисел от 1 до 100.
-var i = 1;
-while (i <= 100) {
-  console.log(i);
-  i += 1;
-}
-for (var i = 1; i <= 100; i += 1) {
-  console.log(i);
-}
-// //  Выведите столбец чисел от 11 до 33.
-var i = 11;
-while (i <= 33) {
-  console.log(i);
-  i += 1;
-}
-for (var i = 11; i <= 33; i += 1) {
-  console.log(i);
-}
-//  Выведите столбец четных чисел в промежутке от 0 до 100.
-var i = 0;
-while (i <= 100) {
-  console.log(i);
-  i += 2;
-}
-for (var i = 0; i <= 100; i += 2) {
-  console.log(i);
-}
-//  С помощью цикла найдите сумму чисел от 1 до 100.
-var i = 0;
-var sum = 0;
-while (i <= 100) {
-  sum += i;
-  i++;
-}
-console.log(sum);
+// Напишите функцию stringToarray(str), которая преобразует строку в массив слов.
 
-var sum = 0;
-for (var i = 0; i <= 100; i++) {
-  sum += i;
+var str = "Каждый охотник желает знать";
+function stringToarray(str) {
+  return str.trim().split(" ");
 }
-console.log(sum);
-// Работа с for для массивов
-//  Дан массив с элементами [1, 2, 3, 4, 5]. С помощью цикла for выведите все эти элементы на экран.
-var arr = [1, 2, 3, 4, 5];
-for (var i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}
-// Дан массив с элементами [1, 2, 3, 4, 5]. С помощью цикла for найдите сумму элементов этого массива.
-// Запишите ее в переменную result.
-var arr = [1, 2, 3, 4, 5];
-var result = 0;
-for (var i = 0; i < arr.length; i++) {
-  result += arr[i];
-}
-console.log(result);
-// Задачи общие.
-// Дан массив с элементами 2, 5, 9, 15, 0, 4. С помощью цикла for и оператора if выведите на экран столбец тех
-// элементов массива, которые больше 3-х, но меньше 10.
-var arr = [2, 5, 9, 15, 0, 4];
-for (var i = 0; i < arr.length; i++) {
-  if (arr[i] > 3 && arr[i] < 10) {
-    console.log(arr[i]);
+
+var arr = stringToarray(str);
+console.log(arr);
+
+// Напишите функцию delete_characters(str, length), которая возвращает подстроку, состоящую из указанного количества символов.
+
+var str = "Каждый охотник желает знать";
+function delete_characters(str, length) {
+  if (str.constructor === String && length > 0) {
+    return str.slice(0, length);
   }
 }
-//  Дан массив с числами. Числа могут быть положительными и отрицательными. Найдите сумму положительных элементов массива.
-var arr = [-2, 5, 9, -15, 0, 4];
-var sum = 0;
-for (var i = 0; i < arr.length; i++) {
-  if (arr[i] > 0) {
-    sum += arr[i];
-  }
+
+console.log(delete_characters(str, 7));
+
+// Напишите функцию insert_dash(str), которая принимает строку str в качестве аргумента и вставляет тире (-) между словами. При этом все символы строки необходимо перевести в верхний регистр.
+
+var str = "HTML JavaScript PHP";
+
+function insert_dash(str) {
+  return str
+    .trim()
+    .toUpperCase()
+    .replace(/[^a-zA-Z0-9 -]/, "")
+    .replace(/\s/g, "-");
 }
-console.log(sum);
-//  Дан массив с элементами 1, 2, 5, 9, 4, 13, 4, 10. С помощью цикла for и оператора if проверьте есть ли в массиве
-// элемент со значением, равным 4. Если есть - выведите на экран 'Есть!' и выйдите из цикла.
-var arr = [1, 2, 5, 9, 4, 13, 4, 10];
-for (var i = 0; i < arr.length; i++) {
-  if (arr[i] == 4) {
-    console.log("Есть");
-    break;
-  }
+
+console.log(insert_dash(str));
+
+// Напишите функцию, которая принимает строку в качестве аргумента и преобразует регистр первого символа строки из нижнего регистра в верхний.
+
+var str = "string not starting with capital";
+
+function cursive_letter(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
-//  Дан массив числами, например: [10, 20, 30, 50, 235, 3000]. Выведите на экран только те числа из массива,
-// которые начинаются на цифру 1, 2 или 5.
-var arr = [10, 20, 30, 50, 235, 3000];
-for (var i = 0; i < arr.length; i++) {
-  if (
-    String(arr[i]).startsWith("1") ||
-    String(arr[i]).startsWith("2") ||
-    String(arr[i]).startsWith("5")
-  ) {
-    console.log(arr[i]);
-  }
+
+console.log(cursive_letter(str));
+
+// Напишите функцию capitalize(str), которая возвращает строку, в которой каждое слово начинается с заглавной буквы.
+
+var str = "каждый охотник желает знать";
+
+function capitalize(str) {
+  return str.replace(/(^|\s)\S/g, function (a) {
+    return a.toUpperCase();
+  });
 }
-//  Дан массив с элементами 1, 2, 3, 4, 5, 6, 7, 8, 9. С помощью цикла for создайте строку '-1-2-3-4-5-6-7-8-9-'.
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-for (var i = 0; i < arr.length; i++) {
-  console.log(
-    "-" +
-      String(arr[0]) +
-      "-" +
-      String(arr[1]) +
-      "-" +
-      String(arr[2]) +
-      "-" +
-      String(arr[3]) +
-      "-" +
-      String(arr[4]) +
-      "-" +
-      String(arr[5]) +
-      "-" +
-      String(arr[6]) +
-      "-" +
-      String(arr[7]) +
-      "-" +
-      String(arr[8]) +
-      "-"
+
+console.log(capitalize(str));
+
+// Напишите функцию change_register(str), которая принимает в качестве аргумента строку и и заменяет регистр каждого символа на противоположный. Например, если вводится «КаЖдЫй ОхОтНиК», то на выходе должно быть «кАжДыЙ оХоТнИк».
+
+var str = "КаЖдЫй ОхОтНиК жЕлАеТ зНаТь";
+
+function change_register(str) {
+  var new_str = "";
+  var len = str.length;
+  for (var i = 0; i < len; i++) {
+    if (str[i] === str[i].toLowerCase()) {
+      new_str += str[i].toUpperCase();
+    } else {
+      new_str += str[i].toLowerCase();
+    }
+  }
+  return new_str;
+}
+
+console.log(change_register(str));
+
+// Напишите функцию remove_char(str), которая возвращает строку, очищенную от всех не буквенно-цифровых символов.
+
+var str = "every., -/ hunter #! wishes ;: {} to $ % ^ & * know";
+
+function remove_char(str) {
+  var res = "";
+  res = str.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
+  return res;
+}
+
+console.log(remove_char(str));
+
+// Напишите функцию zeros(num, len), которая дополняет нулями до указаной длины числовое значение с дополнительным знаком «+» или « -« в зависимости от передаваемого аргумента.
+
+function zeros(num, len, sign) {
+  let len_zer = len - (num + "").length, // к-во нулей
+    num_zer = "";
+  for (; len_zer > 0; len_zer--) {
+    num_zer += 0;
+  }
+
+  return sign === undefined || sign === ""
+    ? num_zer + num + ""
+    : sign + num_zer + num + "";
+}
+
+console.log(zeros(145, 5, "-"));
+console.log(zeros(33, 4, "+"));
+console.log(zeros(33, 4));
+
+// Напишите функцию comparison(str1, str2), которая сравнивает строки без учёта регистра символов.
+
+function comparison(str1, str2) {
+  var res = str1.toUpperCase() === str2.toUpperCase();
+
+  return res;
+}
+console.log(comparison("string", "StRiNg")); //
+console.log(comparison("ABCDe", "AbcdW"));
+
+// Напишите функцию insensitive_search(str1, str2), которая осуществляет поиск подстроки str2 в строкеstr1 без учёта регистра символов.
+
+function insensitive_search(str1, str2) {
+  let search_str = new RegExp(str2, "ig");
+  var result = str1.search(search_str);
+
+  return result > 0 ? "Соответствует" : "Не соответствует";
+}
+
+console.log(insensitive_search("Изучаю JavaScript", "javascript"));
+console.log(insensitive_search("Изучаю JavaScript", "javascriptS"));
+
+// Напишите функцию initCap(str), которая преобразует стиль написания составных слов строки в CamelCase, при котором несколько слов пишутся слитно без пробелов, при этом каждое слово внутри строки пишется с заглавной буквы.
+
+str = "hEllo woRld";
+function initCap(str) {
+  return str.toLowerCase().replace(/(?:^|\s)[a-z]/g, function (m) {
+    return m.toUpperCase().replace(/\s+/g, "");
+  });
+}
+
+console.log(initCap(str));
+
+// Напишите функцию initSnake(str), которая преобразует стиль написания составных слов строки из CamelCase в snake_case, при котором несколько слов разделяются символом подчеркивания (_), причём каждое слово пишется с маленькой буквы.
+
+function initSnake(str) {
+  var str = str.replace(/[A-Z]/g, function (letter) {
+    return "_" + letter.toLowerCase();
+  });
+
+  return str.replace(/^_/, "");
+}
+
+console.log(initSnake("HelloWorld"));
+
+// Напишите функцию repeatStr(str, n), которая возвращает строку повторяемую определённое количество раз.
+
+function repeatStr(str, n) {
+  var new_str = "";
+  while (n-- > 0) new_str += str;
+  return new_str;
+}
+
+console.log(repeatStr("Hello!", 5));
+
+// Напишите функцию path(pathname), которая возвращает имя файла (подстрока после последнего символа "\" ) из полного пути к файлу.
+
+var pathname = "/home/user/dir/file.txt";
+
+function path(pathname) {
+  var name = pathname.split("/").pop();
+  return name;
+}
+
+console.log(path(pathname));
+
+// Создайте метод объекта String endsWith(), который сравнивает подстроку str1 с окончанием исходной строки str и определяет заканчивается ли строка символами подстроки.
+
+var str = "Каждый охотник желает знать";
+var str1 = "скрипт";
+var str2 = "знать";
+
+String.prototype.endsWith = function (substring) {
+  if (substring.length > this.length) return false;
+  return this.substr(this.length - substring.length) === substring;
+};
+
+console.log(str.endsWith(str1));
+console.log(str.endsWith(str2));
+
+// Напишите функцию getSubstr(str, char, pos), которая возвращает часть строки, расположенную после или до указанного символа char в зависимости от параметра pos.
+
+var str = "Астрономия — Наука о небесных телах";
+
+function getSubstr(str, char, pos) {
+  if (pos == "after") return str.slice(str.indexOf(char) + 1);
+  else if (pos == "before") return str.slice(0, str.indexOf(char));
+  else return str;
+}
+
+console.log(getSubstr(str, "—", "after"));
+console.log(getSubstr(str, "Н", "before"));
+
+// Напишите функцию insert(str, substr, pos), которая вставляет подстроку substr в указанную позицию pos строки str. По умолчанию подстрока вставляется в начало строки.
+
+function insert(str, substr, pos) {
+  var array = str.split("");
+  array.splice(pos, 0, substr);
+  return array.join("");
+}
+
+console.log(insert("Казнить нельзя"));
+console.log(insert("Казнить нельзя", "Помиловать "));
+console.log(insert("Казнить нельзя", "Помиловать ", 8));
+
+// Напишите функцию limitStr(str, n, symb), которая обрезает строку, если она длиннее указанного количества символов n. Усеченная строка должна заканчиваться троеточием «...» (если не задан параметр symb) или заданным символом symb.
+
+function limitStr(str, n, symb) {
+  if (!n && !symb) return str;
+  symb = symb || "...";
+  return str.substr(0, n - symb.length) + symb;
+}
+
+console.log(limitStr("Каждый охотник желает знать."));
+console.log(limitStr("Каждый охотник желает знать.", 17));
+console.log(limitStr("Каждый охотник желает знать.", 22, "!"));
+
+// Напишите функцию count(str, stringsearch), которая возвращает количество символов stringsearch в строке str.
+
+var symb = "о",
+  str = "Астрономия это наука о небесных объектах";
+function count(str, symb) {
+  for (
+    var count = -1, index = 0;
+    index != -1;
+    count++, index = str.indexOf(symb, index + 1)
   );
-  break;
-}
-//  Составьте массив дней недели. С помощью цикла for выведите все дни недели, а выходные дни выведите жирным.
-var arr = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
-for (var i = 0; i < 4; i++) {
-  console.log(arr[i]);
-}
-for (var i = 5; i <= 6; i++) {
-  console.log(arr[i].bold());
-}
-// Составьте массив дней недели. С помощью цикла for выведите все дни недели, а текущий день выведите курсивом.
-// Текущий день должен храниться в переменной day.var arr = ["пт", "вт", "ср", "чт", "пт", "сб", "вс"];
-var arr = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
-for (var i = 0; i < 6; i++) {
-  console.log(arr[i]);
-}
-console.log(arr[3].italics());
-//Дано число n=1000. Делите его на 2 столько раз, пока результат деления не станет меньше 50. Какое число получится?
-// Посчитайте количество итераций, необходимых для этого (итерация - это проход цикла), и запишите его в переменную num.
 
-for (num = 0, n = 1000; n >= 50; num++, n /= 2);
-console.log(n + ", Количество итераций: " + num);
+  return count;
+}
+
+console.log(count(str, symb));
+
+// Напишите функцию strip(str), которая удаляет все лишние пробелы из строки str.
+
+var str = "    Max is a good      boy     ";
+
+function strip(str) {
+  str.replace(/\s+/g, " ").replace(/^\s/, "").replace(/\s$/, "");
+
+  return str;
+}
+
+console.log(strip(str));
+
+// Напишите функцию cutString(str, n), которая удаляет лишние слова из строки str, оставив в ней n слов.
+
+var str = "Сила тяжести приложена к центру масс тела";
+
+function cutString(str, n) {
+  return str.split(" ").splice(0, n).join(" ");
+}
+
+console.log(cutString(str, 5));
+
+// Напишите функцию findWord(word, str), которая проверяет, существует ли в строке str слова word.
+
+var str = "abc def ghi jkl mno pqr stu";
+
+function findWord(word, str) {
+  return RegExp("\\b" + word + "\\b").test(str);
+}
+
+console.log(findWord("mno", str));

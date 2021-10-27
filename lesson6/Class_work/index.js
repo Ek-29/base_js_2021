@@ -1,94 +1,71 @@
-// const isUserAuth = false;
-// function checkAccess() {
-//   if (isUserAuth) {
-//     console.log("Доступ есть");
-//   } else {
-//     console.log("Доступа нет");
-//   }
-// }
+// let num1 = 1;
+// let num2 = num1;
 
-// checkAccess();
+// console.log(num1, num2);
 
-// function writeMessage() {
-//   function checkAccess() {
-//     if (isUserAuth) {
-//       console.log("Привет польз");
-//     } else {
-//       console.log("Привет гость");
-//     }
-//   }
+// num1 = 2;
+// console.log(num1, num2);
 
-//   writeMessage();
-// }
+// const obj1 = {
+//   name: "Kate",
+// };
+// const obj2 = obj1;
+// console.log(obj1, obj2);
 
-// function sum(a, b = 0) {
-//   console.log(a + b);
-// }
-// sum(1, 4);
-// sum(16);
+// obj1.name = "Ivan";
 
-// function getName(name) {
-//   console.log("до return");
-//   return name;
-//   console.log("после return");
-// }
+// console.log(obj1, obj2);
 
-// const userName = getName("Kate");
-// console.log(userName);
+// const obj = {};
+// console.log(obj);
+// obj.age = "12";
+// obj["name-user"] = "Kate";
 
-// function getName(userName) {
-//   return userName;
-// }
+// console.log(obj);
+// console.log(obj.age, obj["name-user"]);
+// obj.age = "18";
+// obj["name-user"] = "Elena";
+// console.log(obj);
 
-// const nameUserOne = getName(name);
-// console.log(nameUserOne);
+// const obj = {
+//   sayHi: function (name) {
+//     console.log("Hi, USER -", name);
+//   },
+// };
 
-// var name = "Kate";
-// name = "Ivan";
+// obj.sayHi("Kate");
 
-// const nameUserTwo = getName(name);
-// console.log(nameUserTwo);
+// const myFAvFilm = {
+//   date: "12/12/05",
+//   director: "Mike Wasovsky",
+//   country: "USA",
+//   money: "44455522621$",
+//   getName: function (name) {
+//     console.log(name);
+//     myFAvFilm.getName("Дневник памяти");
+//   },
+// };
 
-// const userName = false;
-// function checkName() {
-//   if (userName) {
-//     console.log("Привет, пользователь");
-//   } else {
-//     console.log("Привет, гость");
-//   }
-// }
+// delete myFAvFilm.date;
+// console.log(myFAvFilm);
 
-// checkName();
-
-// function exp(a, b = 2) {
-//   console.log(a ** b);
-// }
-// exp(2);
-
-// function getValue(arr) {
-//   let s = 0;
-
-//   for (i = 0; i < arr.length; i++) {
-//     s += arr[i];
-//   }
-//   return s / arr.length;
-// }
-
-// console.log(getValue([1, 32, 5, 8, 15]));
-let weekArray = ["пн", "вт", "ср", "чт", "пт", "суббота", "восресенье"];
-for (let i = 0; i < weekArray.length; i++) {
-  if (weekArray[i] == "суббота" || weekArray[i] == "воскресенье") {
-    console.log(weekArray[i].bold());
-  } else {
-    console.log(weekArray[i]);
-  }
-}
-
-for (let i = 0; i < weekArray.length; i++) {
-  let day = weekArray[5];
-  if (weekArray[i] == day) {
-    console.log(weekArray[i].italics());
-  } else {
-    console.log(weekArray[i]);
-  }
-}
+console.log(parseInt("200px"));
+console.log(parseFloat("0.2px"));
+console.log(isNaN(NaN));
+console.log(isNaN("sads"));
+console.log(isFinite("15"));
+let num = 255;
+console.log(num.toString()); // "255"
+console.log(num.toString(16)); // ff
+console.log(num.toString(2)); // 11111111
+let num2 = 12.2;
+console.log(Math.round(12.2));
+console.log(Math.floor(12.2));
+console.log(Math.ceil(12.2));
+console.log(num2.toFixed(3));
+console.log(Math.random());
+console.log(Math.max(1, 2, 3));
+console.log(Math.min(1, 2, 3));
+let num3 = 0.1 + 0.2;
+console.log(num3);
+console.log(+num3.toFixed(2));
